@@ -1,0 +1,205 @@
+<!doctype html>
+<html class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/src/style.css" rel="stylesheet">
+    <title>Portofolio Tailwind CSS</title>
+    <style>
+      .navbar-fixed {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          transition: background-color 0.3s;
+      }
+  </style>
+  </head>
+  <body>
+    <div class="bg-gradient-to-b from-neutral-300 via-white to-neutral-300 relative dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+      <!--Header Section Start-->
+      <div class="bg-slate-100">
+        <header class="navbar-fixed bg-transparent py-4 px-10 flex justify-between items-center z-50">
+          <nav>
+              <ul class="flex space-x-6">
+                  <li><a href="#home" class="text-slate-600 hover:text-slate-800 dark:text-slate-100">Home</a></li>
+                  <li><a href="#about" class="text-slate-600 hover:text-slate-800 dark:text-slate-100">About</a></li>
+                  <li><a href="#skill" class="text-slate-600 hover:text-slate-800 dark:text-slate-100">Skills</a></li>
+                  <li><a href="#project" class="text-slate-600 hover:text-slate-800 dark:text-slate-100">Projects</a></li>
+                  <li><a href="#contact" class="text-slate-600 hover:text-slate-800 dark:text-slate-100">Contact</a></li>
+                  <li>
+                    <div class="flex justify-center">
+                      <span class="text-sm text-slate-500 mr-2">Light</span>
+                      <input type="checkbox" id="toggle" class="hidden"/>
+                      <label for="toggle">
+                        <div class="w-9 h-5 bg-slate-500 rounded-full flex items-center p-1 cursor-pointer">
+                          <div class="w-4 h-4 bg-white rounded-full toggle-circle"></div>
+                        </div>
+                      </label>
+                      <span class="text-sm text-slate-500 ml-2">Dark</span>
+                    </div>
+                  </li>
+              </ul>
+          </nav>
+      </header>
+      </div>
+      <!--Header Section End-->
+      <!--Hero Section Start-->
+        <section id="home" class="pt-38 lg:mx-40 lg:pt-50">
+          <div class="container flex px-10">
+            <div class="flex-wrap">
+              <div class="w-full lg:flex">
+                <div class="lg:w-1/2">
+                  <h1 class="text-base font-semibold text-slate-500 md:text-xl lg:text-2xl dark:text-slate-500">Helloooo, I'm<span class="block font-bold text-slate-700 text-4xl mt-1 lg:text-5xl dark:text-slate-200">Zahrin Savana</span></h1>
+                  <h2 class="font-medium text-slate-400 text-lg mb-5">Student of <span class="text-slate-600">frontend developer</span></h2>
+                  <p class="leading-relaxed dark:text-slate-300">Welcome to my personal corner of the web – where creativity meets passion. Take a look around and enjoy the journey!!</p>
+                </div>
+                <div class="relative mt-10 lg:m-0 lg:bottom-30 lg:left-30 lg:w-2xs lg:right-0">
+                  <img src="/img/profile-photo.png" alt="profile-photo" class="mx-auto" />
+                  <span class="absolute -bottom-10 -z-50">
+                  <img src="/img/blubblub.png" alt="blubblub" class="scale-0.5 mx-auto" />
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="mb-20"></div>
+        <!--Hero Section End-->
+        <!--About Section Start-->
+        <section id="about" class="pt-17 mx-10 lg:mx-20">
+          <div>
+            <h5 class="font-weight text-2xl text-slate-700 mb-5 dark:text-slate-200">------- About</h5>
+            <div class="w-full lg:flex">
+              <img src="/img/hijab girl.jpg" alt="hijab girl" class="hidden lg:flex lg:mr-10 lg:w-62 lg:h-auto lg:rounded-lg" />
+              <div>
+                <h3 class="dark:text-slate-200">Hiii, I'm Zahrin Savana</h3>
+                <p class="mb-5 dark:text-slate-300">Welcome to my personal website.</p>
+                <p class="leading-relaxed dark:text-slate-300">I am a 19-year-old Informatics Engineering student with a strong passion for technology, especially in web development. Since starting my journey in coding, I have created various projects – from simple to complex – that have helped me gain a deeper understanding of design, functionality, and user experience.
+                This website serves as a platform to showcase my work, share experiences, and continue learning about the digital world.
+                If you're interested in collaborating or just want to chat, feel free to reach out!
+                Check out some of the projects I've worked on in the portfolio section.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="mb-20"></div>
+        <!--About Section End-->
+        <!--Skill Section Start-->
+        <section id="skill" class="pt-27 mx-10 lg:mx-20">
+          <div>
+            <h5 class="font-weight text-2xl text-slate-700 mb-5 dark:text-slate-200">------- Skills</h5>
+            <div class="flex flex-wrap justify-center items-center gap-x-2 gap-y-2">
+              <div class="flex border border-slate-400 rounded-lg w-32 px-3 py-2 hover:bg-slate-200 dark:hover:bg-slate-500">
+                <img src="/img/html-logo.png" class="w-5 mr-2"/>
+                <h5 class="font-semibold text-xs m-auto dark:text-slate-300">HTML</h5>
+              </div>
+              <div class="flex border border-slate-400 rounded-lg w-32 px-3 py-2 hover:bg-slate-200 dark:hover:bg-slate-500">
+                <img src="/img/css-logo.png" class="w-5 mr-2"/>
+                <h5 class="font-semibold text-xs m-auto dark:text-slate-300">CSS</h5>
+              </div>
+              <div class="flex border border-slate-400 rounded-lg w-32 px-3 py-2 hover:bg-slate-200 dark:hover:bg-slate-500">
+                <img src="/img/js-logo.png" class="w-5 mr-2"/>
+                <h5 class="font-semibold text-xs m-auto dark:text-slate-300">JavaScript</h5>
+              </div>
+              <div class="flex border border-slate-400 rounded-lg w-32 px-3 py-2 hover:bg-slate-200 dark:hover:bg-slate-500">
+                <img src="/img/react-logo.png" class="w-5 mr-2"/>
+                <h5 class="font-semibold text-xs m-auto dark:text-slate-300">React</h5>
+              </div>
+              <div class="flex border border-slate-400 rounded-lg w-32 px-3 py-2 hover:bg-slate-200 dark:hover:bg-slate-500">
+                <img src="/img/bootstrap-logo.jpeg" class="w-5 mr-2"/>
+                <h5 class="font-semibold text-xs m-auto dark:text-slate-300">Bootstrap</h5>
+              </div>
+              <div class="flex border border-slate-400 rounded-lg w-32 px-3 py-2 hover:bg-slate-200 dark:hover:bg-slate-500">
+                <img src="/img/c-logo.png" class="w-5 mr-2"/>
+                <h5 class="font-semibold text-xs m-auto dark:text-slate-300">C</h5>
+              </div>
+              <div class="flex border border-slate-400 rounded-lg w-32 px-3 py-2 hover:bg-slate-200 dark:hover:bg-slate-500">
+                <img src="/img/tailwind-logo.jpeg" class="w-5 mr-2"/>
+                <h5 class="font-semibold text-xs m-auto dark:text-slate-300">Tailwind</h5>
+              </div>
+            </div>
+          </div>
+          <div class="mb-20"></div>
+        </section>
+        <!--Skill Section End-->
+        <!--Project Section Start-->
+        <section id="project" class="pt-27 mx-10 lg:mx-20">
+          <div>
+            <h5 class="font-weight text-2xl text-slate-700 mb-5 dark:text-slate-200">------- Past Project Experience</h5>
+            <p class="text-slate-500 mb-5">Explore the project i've worked so far</p>
+            <div class="container mx-auto px-6 flex flex-wrap gap-5">
+              <div class="rounded-lg shadow-lg overflow-hidden mb-10 w-130 hover:rotate-1">
+                <img src="img/webpertama.png" class="w-full"/>
+                <div class="px-6 py-4">
+                  <div class="font-semibold leading-relaxed text-xl mb-2 text-slate-700 dark:text-slate-200">Marketplace Management Website</div>
+                  <p class="text-sm text-slate-600  dark:text-slate-300">I developed this website to help organize and manage marketplace operations. This platform streamlines inventory management and enhances decision-making.</p>
+                </div>
+              </div>
+              <div class="rounded-lg shadow-lg overflow-hidden mb-10 w-130 hover:rotate-1">
+                <img src="img/portof-react.png" class="w-full"/>
+                <div class="px-6 py-4">
+                  <div class="font-semibold leading-relaxed text-xl mb-2 text-slate-700  dark:text-slate-200">Personel Website</div>
+                  <p class="text-sm text-slate-600  dark:text-slate-300">I created this website using React and Bootstrap to showcase my profile, skills, and projects. It also serves as a platform for me to experiment with and learn new technologies while improving my frontend development skills.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--Project Section End-->
+        <!--Contact Section Start-->
+        <section id="contact" class="pt-27 mx-10 lg:mx-20">
+          <div>
+            <h5 class="font-weight text-2xl text-slate-700 mb-5 dark:text-slate-200">------- Get in Touch</h5>
+            <p class="mb-5 dark:text-slate-300">Let's connect and collaborate! Feel free to reach out through any of the platforms below.</p>
+            <div class="flex gap-3">
+              <div class="flex border border-slate-800 p-2 rounded-lg hover:bg-slate-300 dark:text-slate-300 dark:hover:bg-slate-500">
+                <img src="img/instagram.png" class="w-5 mr-2"/>
+                <a href="https://www.instagram.com/zahrinsavanaa/">instagram</a>
+              </div>
+              <div class="flex border border-slate-800 p-2 rounded-lg hover:bg-slate-300 dark:text-slate-300 dark:hover:bg-slate-500">
+                <img src="img/twitter.png" class="w-5 mr-2"/>
+                <a href="https://x.com/zahrinnaa/"></a>
+              </div>
+              <Button variant="outline-secondary">
+                <div class="flex border border-slate-800 p-2 rounded-lg hover:bg-slate-300 dark:text-slate-300 dark:hover:bg-slate-500">
+                  <img src="img/github.png" class="w-5 mr-2"/>
+                  <a href="https://github.com/Zahrins" target="_blank" rel="noopener noreferrer">github</a>
+                </div>
+              </Button>
+            </div>
+          </div>
+        </section>
+        <!--Contact Section End-->
+        <!--Footer Section Start-->
+        <div class="mt-7"></div>
+        <Container class="bg-white py-1 flex justify-center items-center">
+          <div class="text-center text-gray-700">&copy; 2024 Zahrin Savana. All Rights Reserved.</div>
+        </Container>
+      
+        <!--Footer Section End-->
+    </div>
+    <div class="w-10 h-10 bg-sky-200 rounded-full flex fixed bottom-5 right-5 -translate-x-1/2 cursor-pointer"><a href="#" class="text-xl m-auto">↑</a></div>
+    <script type="module" src="/src/main.js"></script>
+    <script>
+      window.addEventListener("scroll", function() {
+          const header = document.querySelector(".navbar-fixed");
+          if (window.scrollY > 50) {
+              header.classList.add("bg-slate-100", "shadow-md");
+              header.classList.remove("bg-transparent");
+          } else {
+              header.classList.remove("bg-slate-100", "shadow-md");
+              header.classList.add("bg-transparent");
+          }
+      });
+  </script>
+  <script>
+    const checkbox = document.querySelector('#toggle');
+    const html = document.querySelector('html');
+
+    checkbox.addEventListener('click', function () {
+      checkbox.checked ? html.classList.add('dark') : html.classList.remove('dark');
+    });
+  </script>
+  </body>
+</html>
