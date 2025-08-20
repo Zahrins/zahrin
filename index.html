@@ -356,14 +356,12 @@
         };
 
         try {
-          // Using EmailJS service for sending emails
-          // You need to replace these with your actual EmailJS credentials
           const response = await emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', {
             from_name: data.name,
             from_email: data.email,
             subject: data.subject,
             message: data.message,
-            to_email: 'your-email@example.com' // Replace with your actual email
+            to_email: 'khadijahzahrinsavana@gmail.com'
           });
 
           // Show success message
@@ -375,7 +373,7 @@
           }, 5000);
 
         } catch (error) {
-          // Fallback: create mailto link
+          
           const subject = encodeURIComponent(data.subject);
           const body = encodeURIComponent(`From: ${data.name} (${data.email})\n\n${data.message}`);
           const mailtoLink = `mailto:your-email@example.com?subject=${subject}&body=${body}`;
